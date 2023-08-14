@@ -1,9 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <%- include("components/head.ejs") %>
-</head>
-<body data-bs-theme="dark">
-    Hello World
-</body>
+<html lang="en" data-bs-theme="dark">
+   <head>
+      <%- include("components/head.ejs") %>
+   </head>
+
+   <body>
+      <%- include("components/navbar.ejs") %>
+      <!--  -->
+      <%- include("components/landing.ejs") %>
+
+      <!--  -->
+      <footer class="container-fluid bg-dark-subtle border-top mt-3 p-2">
+         <div class="d-flex justify-content-center">
+            <div class="col-md-6 text-center fs-4">
+               2023 Fristroop Development
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>

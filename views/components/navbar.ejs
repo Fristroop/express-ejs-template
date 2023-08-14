@@ -1,0 +1,115 @@
+<nav
+   id="navbar"
+   class="navbar bg-dark-subtle border-bottom p-3">
+   <div class="container-fluid justify-content-between flex-nowrap">
+      <div>
+         <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-sitemap logo my-1"></i>
+         </a>
+      </div>
+
+      <div class="order-1 d-none d-lg-block">
+         <nav class="nav">
+            <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link" href="About Us">Projects</a>
+            <a class="nav-link" href="#">About Us</a>
+         </nav>
+      </div>
+
+      <div>
+         <button
+            class="btn d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas"
+            aria-controls="offcanvas">
+            <i class="fa-solid fa-bars"></i>
+         </button>
+      </div>
+   </div>
+</nav>
+
+<div
+   class="offcanvas offcanvas-end"
+   tabindex="-1"
+   id="offcanvas"
+   aria-labelledby="offcanvas"
+   style="width: 280px">
+   <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvas">Offcanvas</h5>
+      <button
+         type="button"
+         class="btn-close"
+         data-bs-dismiss="offcanvas"
+         aria-label="Close"></button>
+   </div>
+   <div class="offcanvas-body">
+      <div>
+         Some text as placeholder. In real life you can have the elements you
+         have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+         <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown">
+            Dropdown button
+         </button>
+         <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+         </ul>
+      </div>
+   </div>
+</div>
+
+<style>
+   #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+   }
+
+   .logo {
+      font-size: 30px;
+      background: linear-gradient(
+         to bottom,
+         var(--green) 0%,
+         var(--yellow) 50%,
+         var(--red) 100%
+      );
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 0.35s ease;
+   }
+
+   .logo:hover {
+      transform: rotate(-30deg) scale(1.2);
+   }
+
+   .nav-link {
+      color: #aaa;
+   }
+
+   .nav-link:hover {
+      color: #fff;
+      transition: 0.35s;
+      transform: scale(1.1);
+   }
+
+   .nav-link.active {
+      color: var(--green);
+   }
+</style>
+
+<script>
+   window.addEventListener("DOMContentLoaded", () => {
+      const navbar = document.getElementById("navbar");
+      const height = navbar.offsetHeight;
+      document.body.style.paddingTop = height + "px";
+   });
+</script>

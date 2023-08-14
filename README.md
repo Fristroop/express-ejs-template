@@ -1,2 +1,0 @@
-# express-ejs-template
- 

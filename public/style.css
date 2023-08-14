@@ -1,11 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Rubik+Pixels&display=swap");
+
+:root {
+   --red: #ff0000;
+   --orange: #ff9900;
+   --yellow: #ffff00;
+   --green: #00f000;
+   --aqua: #00ffff;
+   --blue: #0000ff;
+   --purple: #9900ff;
+   --pink: #ff00ff;
+   --gradient: var(--green), var(--yellow), var(--orange), var(--red);
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   overflow-x: hidden;
+   overflow-y: hidden;
 }
 
 body {
-    font-size: 20px;
-    font-family: "Poppins";
-    background-color: aliceblue;
+   font-family: "Bruno Ace", cursive;
 }
